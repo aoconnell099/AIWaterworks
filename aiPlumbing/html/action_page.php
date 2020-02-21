@@ -4,19 +4,19 @@ $msg = $_POST["message"];
 echo $msg;
 
 $name = $_POST["name"];
-echo $name;
+echo $name."\n";
 
 $phone = $_POST["phoneNumber"];
-echo $phone;
+echo $phone."\n";
 
 $subject = $_POST["subject"];
-echo $subject;
+echo $subject."\n";
 
 $header = "From: " . $name . "\r\n" . 
             "Phone: " . $phone . "\r\n" .
-             "Subject: " . $subject;
+             "Subj: " . $subject;
 
-$headers = array((string) $name, (string) $phone, (string) $subject);
+echo $header;
 
 // use wordwrap() if lines are longer than 70 characters
 //$msg = wordwrap($msg,70);
